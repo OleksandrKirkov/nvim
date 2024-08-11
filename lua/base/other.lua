@@ -1,5 +1,7 @@
 -- [[ Settings panels ]] --
 
+local opt = vim.opt
+
 -- Vertical splits become right
 opt.splitright = true
 
@@ -15,7 +17,7 @@ opt.clipboard = 'unnamedplus'
 opt.fixeol = false
 
 -- Autocomplete
-opt.completeopt = 'menuaone,noselect'
+opt.completeopt = 'menuone,noselect'
 
 -- Don't autocomment new lines when switching go a new line
 vim.cmd [[autocmd BufEnter * set fo-=c fo-=r fo-=o]]

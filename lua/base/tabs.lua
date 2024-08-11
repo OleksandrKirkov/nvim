@@ -1,5 +1,7 @@
 -- [[ Tabs settings ]] --
 
+local opt = vim.opt
+
 -- Number whitespace characters
 opt.shiftwidth = 2
 
