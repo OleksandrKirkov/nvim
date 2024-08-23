@@ -50,4 +50,10 @@ return require('packer').startup(function(use)
 		end
 	}
 
+	-- [[ Themes ]] --
+	
+	use "AbdelrahmanDwedar/awesome-nvim-colorschemes"
+
+	vim.cmd('colorscheme tokyonight')
+
 end)
