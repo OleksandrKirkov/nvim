@@ -63,6 +63,9 @@ return require('packer').startup(function(use)
     }
   }
 
+	-- Treesitter
+	use "nvim-treesitter/nvim-treesitter"
+
 	-- [[ Themes ]] --
 	
 	use "AbdelrahmanDwedar/awesome-nvim-colorschemes"
