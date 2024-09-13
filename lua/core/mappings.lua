@@ -21,3 +21,5 @@ local is_open = false
 
 end)
 vim.keymap.set('n', '<leader>o', ':Neotree git_status<CR>')
+
+vim.keymap.set("n", '<leader>f', vim.lsp.buf.format)
