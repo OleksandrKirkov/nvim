@@ -28,6 +28,16 @@ local plugins = {
     { "L3MON4D3/LuaSnip" },
     { "saadparwaiz1/cmp_luasnip" },
 
+    -- Mason
+    {
+        "williamboman/mason-lspconfig.nvim",
+        dependencies = {
+            "williamboman/mason.nvim",
+            "neovim/nvim-lspconfig",
+            "j-hui/fidget.nvim",
+        }
+    },
+
     -- Color theme
     {
         "nvim-treesitter/nvim-treesitter"
