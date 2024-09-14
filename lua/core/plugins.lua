@@ -121,7 +121,7 @@ local plugins = {
 
     -- Navigation
 
-    { "christoomey/vim-tmux-navigator" }
+    { "christoomey/vim-tmux-navigator" },
 }
 
 local opts = {}

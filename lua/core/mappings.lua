@@ -28,3 +28,8 @@ vim.keymap.set('n', '<leader>f', vim.lsp.buf.format)
 
 -- s1n7ax/nvim-window-picker
 -- christoomey/vim-tmux-navigator
+
+vim.keymap.set('n', '<A-h>', '<C-w>H')
+vim.keymap.set('n', '<A-j>', '<C-w>J')
+vim.keymap.set('n', '<A-k>', '<C-w>K')
+vim.keymap.set('n', '<A-l>', '<C-w>L')
