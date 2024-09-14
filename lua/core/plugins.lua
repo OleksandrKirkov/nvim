@@ -115,11 +115,13 @@ local plugins = {
             "MunifTanjim/nui.nvim",
             -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
         }
-    }, 
+    },
 
-	-- [[ Themes ]] --
+	--{ "AbdelrahmanDwedar/awesome-nvim-colorschemes" }
 
-	--{ "AbdelrahmanDwedar/awesome-nvim-colorschemes" } 
+    -- Navigation
+
+    { "christoomey/vim-tmux-navigator" }
 }
 
 local opts = {}
