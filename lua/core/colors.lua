@@ -1,11 +1,12 @@
 vim.opt.termguicolors = true
 
 function SetColor(color)
-    color = "tokyonight-night"
+    -- color = "tokyonight-night"
     vim.cmd.colorscheme(color)
 
     vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
     vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
-SetColor()
+-- SetColor("tokyonight-night")
+SetColor("gruvbox")

@@ -44,12 +44,20 @@ local plugins = {
         -- build = ":TSUpdate",
     },
     {
+        "morhetz/gruvbox",
+        lazy = false,
+        priority = 1000,
+        config = function()
+            vim.o.background = "dark"
+            vim.g.gruvbox_contrast_dark = 'hard'
+        end
+    },
+    {
         "folke/tokyonight.nvim",
         lazy = false,
         priority = 1000,
         opts = {},
     },
-
     {
         "folke/flash.nvim",
         event = "VeryLazy",
