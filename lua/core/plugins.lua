@@ -127,6 +127,12 @@ local plugins = {
 
 	--{ "AbdelrahmanDwedar/awesome-nvim-colorschemes" }
 
+    -- Lualine
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
+
     -- Navigation
 
     { "christoomey/vim-tmux-navigator" },
