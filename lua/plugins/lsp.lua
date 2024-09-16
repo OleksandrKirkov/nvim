@@ -11,6 +11,7 @@ require("mason-lspconfig").setup {
         "cssmodules_ls",
         "eslint",
         "jsonls",
+        "Markdown_Oxide"
     },
 
     handlers = {
