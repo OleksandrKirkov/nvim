@@ -11,7 +11,10 @@ require("mason-lspconfig").setup {
         "cssmodules_ls",
         "eslint",
         "jsonls",
-        "Markdown_Oxide"
+        "markdown_oxide",
+        "omnisharp",
+        "yamlls",
+        "taplo"
     },
 
     handlers = {
@@ -38,3 +41,12 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 require("lspconfig")["ts_ls"].setup { capabilities = capabilities }
 require("lspconfig")["cssls"].setup { capabilities = capabilities }
+require("lspconfig")["omnisharp"].setup {
+    settings = {
+        omnisharp = {
+            enableRoslynAnalyzers = true,
+            enableImportCompletion = true,
+            enableCodeActions = true,
+        }
+    },
+}
