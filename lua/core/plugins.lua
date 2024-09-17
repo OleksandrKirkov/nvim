@@ -38,6 +38,9 @@ local plugins = {
         }
     },
 
+    -- C#
+    { "OmniSharp/omnisharp-vim" },
+
     -- Color theme
     {
         "nvim-treesitter/nvim-treesitter"
