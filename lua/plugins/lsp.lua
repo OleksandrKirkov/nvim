@@ -14,7 +14,8 @@ require("mason-lspconfig").setup {
         "markdown_oxide",
         "omnisharp",
         "yamlls",
-        "taplo"
+        "taplo",
+        "tailwindcss",
     },
 
     handlers = {
@@ -41,6 +42,7 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 require("lspconfig")["ts_ls"].setup { capabilities = capabilities }
 require("lspconfig")["cssls"].setup { capabilities = capabilities }
+require("lspconfig")["tailwindcss"].setup { capabilities = capabilities }
 require("lspconfig")["omnisharp"].setup {
     settings = {
         omnisharp = {

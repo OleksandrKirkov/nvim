@@ -1,13 +1,13 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
-    lazypath,
-  })
+    vim.fn.system({
+        "git",
+        "clone",
+        "--filter=blob:none",
+        "https://github.com/folke/lazy.nvim.git",
+        "--branch=stable", -- latest stable release
+        lazypath,
+    })
 end
 vim.opt.rtp:prepend(lazypath)
 
@@ -122,13 +122,13 @@ local plugins = {
         branch = "v3.x",
         dependencies = {
             "nvim-lua/plenary.nvim",
-            "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+            "nvim-tree/nvim-web-devicons",
             "MunifTanjim/nui.nvim",
             -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
         }
     },
 
-	--{ "AbdelrahmanDwedar/awesome-nvim-colorschemes" }
+    --{ "AbdelrahmanDwedar/awesome-nvim-colorschemes" }
 
     -- Lualine
     {
@@ -139,6 +139,14 @@ local plugins = {
     -- Navigation
 
     { "christoomey/vim-tmux-navigator" },
+
+    -- Tailwind
+    -- {
+        -- "luckasRanarison/tailwind-tools.nvim",
+        -- name = "tailwind-tools",
+        -- build = ":UpdateRemotePlugins",
+        -- opts = {}                    -- your configuration
+    -- }
 }
 
 local opts = {}
