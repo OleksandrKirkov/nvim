@@ -38,3 +38,5 @@ vim.opt.updatetime = 50
 
 -- Highlight a column at position 80
 vim.opt.colorcolumn = "0"
+
+vim.opt.fillchars:append({ eob = ' ' })
